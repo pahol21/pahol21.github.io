@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simping for Elyng</title>
+    <style>
+        body {
+
+        }
+        .head{
+            padding-bottom: 15px;
+        }
+        .display{
+            font-size: x-large;
+            width: 400px;
+            padding-left: 25px;
+
+        }
+        .padding{
+            padding-left: 470px;
+            padding-right: 0px;
+            padding-top: 125px;
+            padding-bottom: 125px;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+        }
+        .jasonButton{
+            display: flex;
+            background-color: yellow;
+
+        }
+        .runeButton{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<div class="padding">
+    <div class="head">
+        <h1 class="head"> r/ErViEnigeChat Quote Generator</h1>
+    </div>
+    <div class="display" id="quoteDisplay">
+
+    </div> <br> <br>
+    <div class="buttons">
+        <button class="jasonButton" onclick="newJasonQuote()">New Jason Quote</button>
+        <button class="runeButton" onclick="newRuneQuote()">New Rune Quote</button>
+    </div>
+</div>
+
+<script>
+    var quotesJason = [
+        "You already you",
+        "Hvad er grundloven?",
+        "Hvor ligger England... er det UK? Nej det er det ikke...",
+        "Beta kommer før Alfa",
+        "Jeg har ingen buttcheeks",
+        "Når jeg tænker på Dorthe, tænker jeg på en faggot",
+        "Når dine sko lugter af helvedes til, spray dem med parfume"
+    ]
+
+    function newJasonQuote() {
+        var randomNumber = Math.floor(Math.random() * (quotesJason.length));
+        document.getElementById('quoteDisplay').innerHTML = quotesJason[randomNumber]
+    }
+
+    var quotesRune = [
+        "Cill Bosby",
+        "EDC er et mobilselskab",
+        "Rasmus skyder mig scar",
+        "Kris har også en fetish for heste",
+        "Eating waterman",
+        "Er du gul?",
+        "Kids these don't",
+        "Det er et gay kort som gay personer spiller for at være gay",
+        "Juleferien er i februar"
+    ]
+    function newRuneQuote() {
+        var randomNumber = Math.floor(Math.random() * (quotesRune.length));
+        document.getElementById('quoteDisplay').innerHTML = quotesRune[randomNumber]
+    }
+
+</script>
+</body>
+</html>
