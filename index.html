@@ -6,6 +6,10 @@
             body {
                 background-image: url("https://i.pinimg.com/736x/b7/cb/28/b7cb2887031d3070e5c2d0fe1224e98b--yo-swag.jpg");
             }
+            .content{
+                max-width: 500px;
+                margin: auto;
+            }
             .head{
                 padding-bottom: 15px;
                 background-color: greenyellow;
@@ -15,27 +19,25 @@
             .display{
                 font-size: x-large;
                 width: 400px;
+                height: 60px;
                 padding-left: 25px;
-
-
-            }
-            .padding{
-                padding-left: 470px;
-                padding-right: 0px;
-                padding-top: 125px;
-                padding-bottom: 125px;
             }
             .buttons{
                 display: flex;
                 flex-direction: row;
+                padding-left: 50px;
             }
             .jasonButton{
                 display: flex;
                 background-color: yellow;
-
             }
             .runeButton{
                 display: flex;
+                background-color: green;
+            }
+            .olyngButton{
+                display: flex;
+                background-color: fuchsia;
             }
             .other{
                 display: flex;
@@ -44,7 +46,7 @@
         </style>
 </head>
 <body>
-    <div class="padding">
+    <div class="content">
         <div class="head">
             <h1 class="head"> r/ErViEnigeChat Quote Generator</h1>
         </div> <br>
@@ -54,6 +56,7 @@
         <div class="buttons">
             <button class="jasonButton" onclick="newJasonQuote()">New Jason Quote</button>
             <button class="runeButton" onclick="newRuneQuote()">New Rune Quote</button>
+            <button class="olyngButton" onclick="newOlyngQuote()">New Olyng Quote</button>
         </div>
     </div>
     <div class="other">
@@ -62,6 +65,9 @@
         <img src="http://31.media.tumblr.com/866ad566ac45add3b2405e8ace8591d0/tumblr_n7uu5nfffu1sbg8zzo1_500.gif" width="400px">
     </div>
 <script>
+    function randemNumber (x) {
+        Math.floor(Math.random() * x)
+    }
         var quotesJason = [
             "You already you",
             "Hvad er grundloven?",
@@ -69,7 +75,54 @@
             "Beta kommer før Alfa",
             "Jeg har ingen buttcheeks",
             "Når jeg tænker på Dorthe, tænker jeg på en faggot",
-            "Når dine sko lugter af helvedes til, spray dem med parfume"
+            "Når dine sko lugter af helvedes til, spray dem med parfume",
+            "Der er ingen logik eller argumenter, det er straight fax",
+            "But pluck",
+            "På kontanthjælp skal du arbejde lige så meget som på et arbejde",
+            "Drej dit fucking pis og dræb dem",
+            "De er der begge tre",
+            "Jeg håber at dem der laver loven dør",
+            "Nej du skal tænke på en fed dorit",
+            "Poppy er så dværg at kigge på",
+            "Jeg bliver ved med at skide, det er vand",
+            "Anivia er pik i røven",
+            "Leonardo DiCaprio... jeg ved ikke hvad det ord betyder",
+            "Hvis en dreng bliver voltaget af en pige, burde man faktisk blive slået ihjel",
+            "Denne kylling er så koldt at den brænder mine hænder",
+            "Min mening er facts",
+            "Shut up black",
+            "Get dombasted",
+            "Hvad er incest? Er det familie sex? Det er fucking godt",
+            "Er det ulovligt at være Nazi?",
+            "Når man fucker sin datter, er man True Dad",
+            "Når du er alene hjemme, danser du sikkert emo dans",
+            "Flot sagt, men du dum",
+            "Din farfar, nej din 2 far",
+            "Kan mayonaise blive for gammelt?",
+            "Jeg prutter hele tiden og jeg kan ikke stoppe",
+            "He male",
+            "Når jeg ser en pige, så tænker jeg på hvad man kan bruge hende til",
+            "Når en pige bliver voldtaget, så er det fordi hun ikke sagde fra",
+            "Du sutter held",
+            "Det vil jeg gerne se, mens jeg skider",
+            "Jeg får meget ost på min pik!",
+            "Hvis vi vinder dette game, sutter jeg Runes pik",
+            "Jason med the big play og the big gay",
+            "Hvad hedder pis på dansk?",
+            "Min personlighed er at være toxic. Folk kan godt lide mig fordi jeg er toxic, prøv at se hvor mange venner jeg har",
+            "Hvad er baby?",
+            "Rune du er sådan en Baka! >:(",
+            "Hvis nogle siger 'Baka' eller 'Brat' unironically, så fortjener de at dø",
+            "Jeg vil virkelig bare gerne dø i mit røvhul",
+            "Jeg gidder ikke at se hvad du har skrevet til mig, det er gay",
+            "Do you want to be hard, cause i can make you hard",
+            "Det er lige meget at BTS de er drenge, jeg vil stadig kneppe dem",
+            "Er der nogle lækre autister?",
+            "Jeg er racist over for perkere",
+            "Skal du i seng i morgen",
+            "Min pik lugter af plastik",
+            "Og du sutter bare hans pik, øf øf øf"
+
         ]
 
         function newJasonQuote() {
@@ -87,11 +140,32 @@
             "Kids these don't",
             "Det er et gay kort som gay personer spiller for at være gay",
             "Juleferien er i februar",
-            "Hvor bor jeg?"
+            "Hvor bor jeg?",
+            "Er vi ligesom de der Robin og Julia?",
+            "Baggrundsstress",
+            "Wakanda means family",
+            "Retard together weak, retard togehter strong",
+            "Hvor stort er Asien egentligt?",
+            "Lad mig lige denounce ham her, han skal vide at han er en faggot",
+            "Jeg vidste ikke at Rusland var så stort. Det er jo større end de fleste andre lande",
+            "Annie er kinda hot"
         ]
         function newRuneQuote() {
             var randomNumber = Math.floor(Math.random() * (quotesRune.length));
             document.getElementById('quoteDisplay').innerHTML = quotesRune[randomNumber]
+        }
+
+        var quotesOlyng = [
+            "Spilmester Martin faldte i havnen mens han pissede",
+            "Den bedste ost kommer fra pikken",
+            "Skrabeæg er Battle Royale æg",
+            "Fucking fjeder du ved, boing boing",
+            "Stop fagoto",
+            "Willy Wonka kunne tage min røv"
+        ]
+        function newOlyngQuote() {
+            var randomNumber = Math.floor(Math.random() * (quotesOlyng.length));
+            document.getElementById('quoteDisplay').innerHTML = quotesOlyng[randomNumber]
         }
 
 </script>
